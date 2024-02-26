@@ -27,5 +27,22 @@
     <li><a href="frequencia.php">Frequencia</a></li>
 </ul>
 
+
+<?php 
+$teste = "do aluno";
+    echo '<p>'.'Sistema acadêmico '.$teste.'</p>';
+
+$aluno = "Pablo";
+$curso = "Programador Web";
+
+echo '<p>'.'O aluno '.$aluno.' está matriculado no curso '.$curso.'</p>';
+
+$notas = array("prova1" => 8.3, "prova2" => 5.9, "prova3" => 9.2);
+
+echo '<p>'.'Média das notas do aluno '.$aluno.($notas["prova1"]+$notas["prova2"]+$notas["prova3"])/3,'</p>';
+
+
+?>
+
 </body>
 </html>
