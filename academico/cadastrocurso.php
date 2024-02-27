@@ -13,8 +13,11 @@
 
     <label for="Aluno">Nome: </label>
     <input type="text" name="aluno" id="aluno">
-    <label for="curso">Curso: </label>
-    <input type="text" name="curso" id="curso">
+    <label for="curso">Selecione o curso: </label>
+    <input type="radio" name="curso" id="m" value="m">Manutenção de computadores 
+    <input type="radio" name="curso" id="r" value="r">Redes de computadores
+    <input type="radio" name="curso" id="p" value="p">Programação de computadores
+    <input type="radio" name="curso" id="w" value="w">Programação Web
     <input type="reset" value="Limpar">
     <input type="submit" value="Enviar">
 
@@ -22,7 +25,7 @@
 
     <?php 
 
-
+// funcionamento de variaveis e lógica no php
     $n1 = 10;
     $n2 = 15;
     $resultado = ++$n1;
