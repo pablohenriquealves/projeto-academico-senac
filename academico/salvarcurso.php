@@ -50,7 +50,7 @@ for ($i=0; $i < count($grupo); $i++) {
 }
 
 $disciplinas = array("Redes de computadores", "Algorítmos", "Programação de computadores", "Manutenção de computadores");
-foreach($disciplinas as $materias);
+foreach($disciplinas as $materias)
 echo '<p>'.$materias.'</p>';
 
 
