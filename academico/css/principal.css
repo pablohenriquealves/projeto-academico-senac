@@ -56,3 +56,8 @@ table, tr, td {
     display: inline-block;
     float: left;
 }
+
+
+.formulario {
+    display: inline-block;
+}
