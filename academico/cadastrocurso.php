@@ -30,17 +30,5 @@
 </div>
     </form>
 
-    <?php 
-
-// funcionamento de variaveis e lógica no php
-    $n1 = 10;
-    $n2 = 15;
-    $resultado = ++$n1;
-    echo $resultado;
-
-    
-    ?>
-
-
 </body>
 </html>

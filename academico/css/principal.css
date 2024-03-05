@@ -6,7 +6,10 @@
 }
 
 body {
+
+    margin: 0;
     font-family: Roboto;
+
 }
 
 p {
@@ -54,10 +57,39 @@ table, tr, td {
     height: 90%;
     box-sizing: border-box;
     display: inline-block;
-    float: left;
+}
+.form {
+    background: linear-gradient(to bottom, #7fffd4, #9fffdf, #fff);
+    display: inline-block;
+    align-items: left;
+    width: 100%;
+
 }
 
+.form input {
+    background-color: antiquewhite;
+    border: 2px solid gray;
+}
+.form input::after{
+    border: 2px solid black;
 
-.formulario {
-    display: inline-block;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+input[type="submit"]:hover {
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 2px solid black;
+}
+
+.resultado {
+    font-size: 3em;
+    background: linear-gradient(to bottom, rgb(35, 138, 223), #fff);
+    color: #fff;
+    border: 5px solid black;
+    border-radius: 10px;
 }
