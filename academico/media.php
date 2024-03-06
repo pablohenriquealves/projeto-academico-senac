@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="css/principal.css">
 
-
 <?php 
 $prova1 = $_POST['prova1'];
 $prova2 = $_POST['prova2'];
