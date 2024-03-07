@@ -21,16 +21,16 @@ if (isset($_POST["enviar"])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Funcionários</title>
 </head>
 
 <body>
-    <form action="index.php" method="POST">
+    <form action="funcionario.php" method="POST">
 
         <label> Nome: </label>
         <input type="text" name="nome">
@@ -61,7 +61,7 @@ if (isset($_POST["enviar"])) {
     }
 
     ?>
-    <form action="index.php" method="GET">
+    <form action="funcionario.php" method="GET">
         <input type="submit" name="apagar" value="Apagar">
     </form>
 
