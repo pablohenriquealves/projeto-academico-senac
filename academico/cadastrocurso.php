@@ -41,8 +41,8 @@
 </thead>
 <tbody>
     <?php 
-    require ('script/conexao.php'); 
-    $sql = "SELECT nome, curso FROM matricula";
+    require ('script/conexao.php');
+    $sql = "SELECT id, nome, curso FROM matricula";
     $resultado = mysqli_query($conexao, $sql);
 
     while($row = mysqli_fetch_assoc($resultado)) {
@@ -68,8 +68,12 @@
                 break;
         }
         echo "</td>";
-        echo "<td><button>Editar</button></td>";
+        echo "<td>";
+        echo "<a href='editar_curso.php?id=".$row['id']."'>Editar</a> |";
+        echo "<a href='excluir_curso.php?id=".$row['id']."'>Excluir</a>";
+        echo "</td>";
         echo "</tr>";
+
     }
     mysqli_close($conexao);
     ?>
@@ -79,6 +83,7 @@
 
 
 </table>
+
 
 </body>
 </html>
