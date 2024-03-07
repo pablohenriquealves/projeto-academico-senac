@@ -60,10 +60,8 @@ table, tr, td {
 }
 .form {
     background: linear-gradient(to bottom, #7fffd4, #9fffdf, #fff);
-    display: inline-block;
     align-items: left;
     width: 100%;
-
 }
 
 .form input {
