@@ -31,20 +31,31 @@ if(isset($_GET['id'])){
 </head>
 <body>
     <h1>Editar Curso</h1>
-    <form action="" method="post">
+    <form action="atualizar_curso.php" method="post">
 
-    <input type="text" name="id" id="id" value="<?php echo $curso['id']; ?>">
-    <input type="text" name="id" id="id" value="<?php echo $curso['nome']; ?>">
-    <input type="text" name="id" id="id" value="<?php echo $curso['curso']; ?>">
-
-    <input type="submit" value="Atualizar">
+    <input type="hidden" name="id" id="id" value="<?php echo $curso['id']; ?>">
+    <input type="text" name="nome" id="nome" value="<?php echo $curso['nome']; ?>">
+    <input type="text" name="curso" id="curso" value="<?php echo $curso['curso']; ?>">
     
+    
+    
+    
+    <label for="curso"></label>
+    <input type="radio" name="curso" id="curso_m" value="m" <?php echo $curso['curso'] == 'm' ? 'checked' : ""; ?> >
+    <label for="m">Manutenção de Computadores</label>
 
+    <input type="radio" name="curso" id="curso_r" value="r" <?php echo$curso['curso'] == 'r' ? 'checked' : ""?>>
+    <label for="r">Redes de Computadores</label>
+
+    <input type="radio" name="curso" id="curso_p" value="p" <?php echo $curso['curso'] == 'p' ? 'checked' : "" ?>>
+    <label for="p">Programação de Computadores</label>
+
+    <input type="radio" name="curso" id="curso_w" value="w" <?php echo $curso['curso'] == 'w' ? 'checked' : "" ?>>
+    <label for="w">Programação Web</label>
+    
+    <input type="submit" value="Atualizar">
+    <a href="cadastrocurso.php">Voltar</a>
 
     </form>
 </body>
 </html>
-
-<?php 
-$sql = "UPDATE matricula SET "
-?> 

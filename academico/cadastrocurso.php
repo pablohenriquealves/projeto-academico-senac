@@ -18,9 +18,9 @@
 </div>
   <div>
         <label for="curso">Selecione o curso: </label>
-        <input type="radio" name="curso" id="m" value="m">Manutenção de computadores 
-        <input type="radio" name="curso" id="r" value="r">Redes de computadores
-        <input type="radio" name="curso" id="p" value="p">Programação de computadores
+        <input type="radio" name="curso" id="m" value="m">Manutenção de Computadores 
+        <input type="radio" name="curso" id="r" value="r">Redes de Computadores
+        <input type="radio" name="curso" id="p" value="p">Programação de Computadores
         <input type="radio" name="curso" id="w" value="w">Programação Web
   </div>
 <div>
