@@ -37,6 +37,7 @@
         <th>Nome</th>
         <th>Cursos</th>
         <th>Ações</th>
+        <th></th>
     </tr>
 </thead>
 <tbody>
