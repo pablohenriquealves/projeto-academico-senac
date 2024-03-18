@@ -8,6 +8,7 @@
 </head>
 <script src="script/codigo.js"></script>
 <body>
+    
     <h1>Frequência do Aluno</h1>
 
  <form name="formalunos" action="" method="post" class=formacademico onsubmit="return testa_form()">

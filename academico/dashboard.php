@@ -34,6 +34,7 @@ if(!isset($_SESSION['usuario'])){
 <ul>
     <li><a href="aluno.php">Alunos</a></li>
     <li><a href="atualizaraluno.php">Atualizar Cadastro Aluno</a></li>
+    <li><a href="editarcurso.php">Atualizar Curso do Aluno</a></li>
     <li><a href="professor.php">Professores</a></li>
     <li><a href="disciplina.php">Disciplinas</a></li>
     <li><a href="turma.php">Turmas</a></li>

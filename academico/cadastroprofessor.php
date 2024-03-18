@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Alunos</title>
+    <title>Cadastro de Professores</title>
 </head>
 <body>
-    <P>Preencher os dados do aluno(a):</P>
-    <fieldset><legend>Cadastro do aluno(a)</legend>
-    <form action="cadastro_aluno.php" method="POST">
+    <p>Preencher os dados do professor(a):</p>
+    <fieldset><legend>Cadastro do professor(a)</legend>
+    <form action="cadastro_professor.php" method="POST">
 
     <p>
-        <label for="aluno">Nome</label> <br>
-        <input type="text" name="aluno" id="aluno" required>
+        <label for="nome">Nome</label> <br>
+        <input type="text" name="nome" id="nome" required>
     </p>
     <p>
         <label for="cpf">CPF</label> <br>
@@ -75,13 +75,26 @@
         <label for="telefone">Telefone</label> <br>
         <input type="text" name="telefone" id="telefone" required>
     </p>
+</fieldset>
+<fieldset>
+    
+    <legend>Informações acadêmicas</legend>
+    <label for="formacao">Formação</label>
+    <input type="text" name="formacao" id="formacao" required>
 
+    <label for="titulacao">Titulação</label>
+    <select name="titulacao" id="select" required>
+        <option value="">Selecione a titulação</option>
+        <option value="graduacao">Graduação</option>
+        <option value="mestrado">Mestrado</option>
+        <option value="doutorado">Doutorado</option>
+    </select>
+    </fieldset>
     <p>
         <input type="reset" value="Limpar">
         <input type="submit" value="Enviar">
     </p>
-    </form>
-</fieldset>
+</form>
 
 </body>
 </html>
