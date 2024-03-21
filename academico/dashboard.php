@@ -24,10 +24,13 @@ if(!isset($_SESSION['usuario'])){
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body id="inicio">
+    <header>
     <img src="imagens/logosenacv2.png" alt="logo senac" class="logo">
     <h1>
         <b>Controle Acadêmico</b>
     </h1>
+    </header>
+
     <p>Bem vindo ao <b>sistema de controle academico</b>.</p> <p>Aqui você poderá consultar suas <a href="notas.php" alt="notas da turma" target="_self">notas.</a></p><p>E também sua <i><a href="frequencia.php" alt="frequencia dos alunos" >frequencia</a></i>.</p> 
 
     <h2>Menu</h2>
@@ -55,12 +58,8 @@ echo '<p>'.'O aluno '.$aluno.' está matriculado no curso '.$curso.'</p>';
 $notas = array("prova1" => 8.3, "prova2" => 5.9, "prova3" => 9.2);
 
 echo '<p>'.'Média das notas do aluno '.$aluno.($notas["prova1"]+$notas["prova2"]+$notas["prova3"])/3,'</p>';
-
-
-
-
-
 ?>
+
 
 </body>
 </html>

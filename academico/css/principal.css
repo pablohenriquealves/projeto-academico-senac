@@ -9,7 +9,25 @@ body {
 
     margin: 0;
     font-family: Roboto;
+}
 
+header {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    border: 2px solid black;
+}
+
+aside {
+
+}
+
+main {
+
+}
+
+footer{
+    
 }
 
 p {
