@@ -8,7 +8,6 @@
 <body>
 
     <?php
-
     $aluno = $_POST['aluno'];
     $curso = $_POST['curso'];
     echo '<h2>'.'Confira os dados cadastrados: '.'</h2>';

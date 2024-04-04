@@ -6,30 +6,30 @@
     <title>Sistema Academico</title>
 </head>
 <body>
-    <p>Selecione o Aluno e o Curso</p>
+    <p>Cadastre a disciplina no curso</p>
 
     <fieldset>
-        <legend>Matrícula</legend>
-    <form action="cadastro_matricula.php" method="post">
+        <legend>Cadastro de disciplina nos cursos</legend>
+    <form action="cadastro_curso_disciplina.php" method="post">
     <p>
-        <label for="aluno">Selecione o aluno:</label>
-        <select name="aluno" id="aluno">
+        <label for="curso">Selecione o  curso:</label>
+        <select name="curso" id="curso">
             <?php
                 require ('script/conexao.php');
-                $sql = "SELECT cpf,nome FROM aluno";
+                $sql = "SELECT id, nome FROM curso";
                 $resultado = mysqli_query($conexao, $sql);
                 while ($row = mysqli_fetch_assoc($resultado)) {
-                    echo "<option value='{$row['cpf']}'>{$row['nome']}</option>";
+                    echo "<option value='{$row['id']}'>{$row['nome']}</option>";
                 }
             ?>
         </select>
     </p>
     <p>
-        <label for="curso">Selecione o curso:</label>
-        <select name="curso" id="curso">
+        <label for="disciplina">Selecione a disciplina:</label>
+        <select name="disciplina" id="disciplina">
             <?php
                 require ('script/conexao.php');
-                $sql = "SELECT id,nome FROM curso";
+                $sql = "SELECT id,nome FROM disciplina";
                 $resultado = mysqli_query($conexao, $sql);
                 while ($row = mysqli_fetch_assoc($resultado)) {
                     echo "<option value='{$row['id']}'>{$row['nome']}</option>";
