@@ -4,7 +4,7 @@ $idprofessor = $_POST['professor'];
 
 require ('script/conexao.php');
 
-$sql = "INSERT INTO turma (iddisciplina, idprofessor, curso) VALUE ('$iddisciplina','$idprofessor')";
+$sql = "INSERT INTO turma (iddisciplina, idprofessor) VALUE ('$iddisciplina','$idprofessor')";
 
 if (mysqli_query($conexao, $sql)) {
     echo "Registro inserido com sucesso!";
@@ -14,7 +14,4 @@ else {
 }
 
 header("location:cadastroturma.php");
-
-
-
 ?>

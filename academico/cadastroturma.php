@@ -12,8 +12,8 @@
         <legend>Preencha os dados da turma:</legend>
     <form action="cadastro_turma.php" method="post">
     <p>
-        <label for="aluno">Selecione a disciplina:</label>
-        <select name="aluno" id="aluno">
+        <label for="disciplina">Selecione a disciplina:</label>
+        <select name="disciplina" id="disciplina">
             <?php
                 require ('script/conexao.php');
                 $sql = "SELECT id,nome FROM disciplina";
