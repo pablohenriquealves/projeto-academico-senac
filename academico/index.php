@@ -8,20 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- <h2>Login</h2>
-
-    <form action="login.php" method="POST">
-
-    <label for="usuario">Usuário: </label>
-    <input type="text" name="usuario" id="usuario"> 
-    
-    <label for="Senha">Senha: </label>
-    <input type="password" name="senha" id="senha"> 
-
-    <input type="submit" value="Entrar">
-
-    </form> -->
-
     <section class="vh-100">
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -32,7 +18,7 @@
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
         <form action="login.php" method = "POST">
           <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-            <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+            <p class="lead fw-normal mb-0 me-3">Entre com </p>
             <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
               <i class="fab fa-facebook-f"></i>
             </button>
@@ -47,18 +33,18 @@
           </div>
 
           <div class="divider d-flex align-items-center my-4">
-            <p class="text-center fw-bold mx-3 mb-0">Or</p>
+            <p class="text-center fw-bold mx-3 mb-0">Ou</p>
           </div>
 
           <!-- Email input -->
           <div data-mdb-input-init class="form-outline mb-4">
-          <label for="usuario">Usuário: </label>
+          <label for="usuario">Usuário </label>
           <input type="text" name="usuario" id="usuario"> 
           </div>
 
           <!-- Password input -->
           <div data-mdb-input-init class="form-outline mb-3">
-          <label for="Senha">Senha: </label>
+          <label for="Senha">Senha </label>
           <input type="password" name="senha" id="senha"> 
           </div>
 
@@ -67,17 +53,17 @@
             <div class="form-check mb-0">
               <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
               <label class="form-check-label" for="form2Example3">
-                Remember me
+                Manter conectado
               </label>
             </div>
-            <a href="#!" class="text-body">Forgot password?</a>
+            <a href="#!" class="text-body">Esqueceu a senha?</a>
           </div>
 
           <div class="text-center text-lg-start mt-4 pt-2">
             <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
               style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
-                class="link-danger">Register</a></p>
+            <p class="small fw-bold mt-2 pt-1 mb-0">Não possui uma conta? <a href="#!"
+                class="link-danger">Registrar</a></p>
           </div>
 
         </form>
