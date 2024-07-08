@@ -10,13 +10,13 @@ body {
     margin: 0;
     font-family: Roboto;
 }
-
+/* 
 header {
     text-align: center;
     width: 100%;
     display: flex;
     border: 2px solid black;
-}
+} */
 
 aside {
 
@@ -51,7 +51,7 @@ label, input{
 
 #inicio h1 {
     font-size: 2.8em; 
-    color: blue;
+    color: gray;
     font-weight: bold;
 }
 
@@ -68,6 +68,7 @@ table, tr, td {
 .logo {
     width: 200px;
     height: auto;
+    align-items: center;
 }
 
 .formacademico{
