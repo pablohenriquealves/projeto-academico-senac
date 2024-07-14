@@ -1,4 +1,4 @@
-<?php 
+w<?php 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (isset($_POST['id'],$_POST['nome'], $_POST['curso'])){
         $id = $_POST['id'];
