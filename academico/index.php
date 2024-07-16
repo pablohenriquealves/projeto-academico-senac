@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section class="vh-100">
-  <div class="container-fluid h-custom">
+  <main>
+
+    <section class="position-absolute top-50 start-50 translate-middle vw-100">
+      <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-md-9 col-lg-6 col-xl-5">
         <img src="imagens/draw2.webp"
-          class="img-fluid" alt="Sample image">
+        class="img-fluid" alt="Sample image">
       </div>
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
         <form action="login.php" method = "POST">
@@ -22,32 +24,34 @@
             <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
               <i class="fab fa-facebook-f"></i>
             </button>
-
+            
             <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
               <i class="fab fa-twitter"></i>
             </button>
-
+            
             <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-floating mx-1">
               <i class="fab fa-linkedin-in"></i>
             </button>
           </div>
+          <div class="divider d-flex align-items-center my-4 ">
+          <hr class="border border-danger border-2 opacity-50">
+          <p class="text-center fw-bold mx-3 mb-0">Ou</p>
+          <hr class="border border-danger border-2 opacity-50">
+          </div>
+          
 
-          <div class="divider d-flex align-items-center my-4">
-            <p class="text-center fw-bold mx-3 mb-0">Ou</p>
+          <div class="row g-3 align-items-center">
+          <div class="col-auto">
+          <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuário">
+          </div>
           </div>
 
-          <!-- Email input -->
-          <div data-mdb-input-init class="form-outline mb-4">
-          <label for="usuario">Usuário </label>
-          <input type="text" name="usuario" id="usuario"> 
+          <div class="row g-3 align-items-center my-0">
+          <div class="col-auto">
+          <input type="text" id="senha" name="senha" class="form-control" aria-describedby="passwordHelpInline" placeholder="Senha">
           </div>
-
-          <!-- Password input -->
-          <div data-mdb-input-init class="form-outline mb-3">
-          <label for="Senha">Senha </label>
-          <input type="password" name="senha" id="senha"> 
           </div>
-
+          
           <div class="d-flex justify-content-between align-items-center">
             <!-- Checkbox -->
             <div class="form-check mb-0">
@@ -56,46 +60,26 @@
                 Manter conectado
               </label>
             </div>
-            <a href="#!" class="text-body">Esqueceu a senha?</a>
           </div>
-
+          <a href="#!" class="text-body fs-6">Esqueceu a senha?</a>
+          
           <div class="text-center text-lg-start mt-4 pt-2">
             <button  type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
-              style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+            style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
             <p class="small fw-bold mt-2 pt-1 mb-0">Não possui uma conta? <a href="#!"
-                class="link-danger">Registrar</a></p>
+            class="link-danger">Registrar</a></p>
           </div>
-
+          
         </form>
       </div>
     </div>
   </div>
-  <div
-    class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
-    <!-- Copyright -->
-    <div class="text-white mb-3 mb-md-0">
-      Copyright © 2020. All rights reserved.
-    </div>
-    <!-- Copyright -->
-
-    <!-- Right -->
-    <div>
-      <a href="#!" class="text-white me-4">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#!" class="text-white me-4">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="#!" class="text-white me-4">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="#!" class="text-white">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </div>
 </section>
+</main>
+
+<footer>
+  <?php include 'footer.php' ?>
+</footer>
 
 
 

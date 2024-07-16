@@ -4,7 +4,9 @@ session_start();
 if (!isset($_SESSION['usuario'])) {
     header('Location: index.php');
 } else {
+  if(!isset($_SESSION['bemvindo']))
     echo '<script>alert("Bem-vindo ' . $_SESSION['usuario'] . '");</script>';
+  $_SESSION['bemvindo'] = true;
 }
 ?>
 
@@ -13,69 +15,150 @@ if (!isset($_SESSION['usuario'])) {
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Acadêmico</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/principal.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <?php include 'header.php' ?>
 </head>
+
 <body id="inicio">
 
-    <div class="container">
+    <div class="container-fluid">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        <span class="fs-4">Controle Acadêmico</span>
+      <a href="dashboard.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <img src="imagens/logosenacv2.png" alt="logo senac" class="logo">
+        <span class="fs-4 text-end">Controle Acadêmico</span>
 
       </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a> -->
+          <!-- <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li> -->
       </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
     </header>
 
 
-    <p>Bem vindo ao <b>sistema de controle academico</b>.</p> <p>Aqui você poderá consultar suas <a href="notas.php" alt="notas da turma" target="_self">notas.</a></p><p>E também sua <i><a href="frequencia.php" alt="frequencia dos alunos" >frequencia</a></i>.</p> 
+<div class="row">
+            <aside class="col-md-3">
+  <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-4">Menu</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="dashboard.php" class="nav-link active" aria-current="page">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
+          Início
+        </a>
+      </li>
+      <li>
+      <a href="aluno.php" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+          Alunos
+        </a>
+      </li>
+      <li>
+        <a href="atualizaraluno.php" class="nav-link link-dark">
+        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+        Atualizar Cadastro do Aluno
+        </a>
+      </li>
+      <li>
+      <a href="editarcurso.php" class="nav-link link-dark">
+      <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
+      Atualizar Curso do Aluno
+        </a>
+      </li>
+      <li>
+        <a href="professor.php" class="nav-link link-dark">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          Professores
+        </a>
+      </li>
+      <li>
+      <a href="disciplina.php" class="nav-link link-dark">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          Disciplinas
+        </a>
+      </li>
+      <li>
+        <a href="turma.php" class="nav-link link-dark">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          Turmas
+        </a>
+      </li>
+      <li>
+        <a href="nota.php" class="nav-link link-dark">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          Notas
+        </a>
+      </li>
+      <li>
+        <a href="frequencia.php" class="nav-link link-dark">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          Frequência
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong> <?php $_SESSION['usuario'] ?> </strong>
+      </a>
+      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+        <li><a class="dropdown-item" href="#">Perfil</a></li>
+        <li><a class="dropdown-item" href="#">Configurações</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sair</a></li>
+      </ul>
+    </div>
+  </div>
+  </aside>
 
-    <h2>Menu</h2>
-<ul>
-    <li><a href="aluno.php">Alunos</a></li>
-    <li><a href="atualizaraluno.php">Atualizar Cadastro Aluno</a></li>
-    <li><a href="editarcurso.php">Atualizar Curso do Aluno</a></li>
-    <li><a href="professor.php">Professores</a></li>
-    <li><a href="disciplina.php">Disciplinas</a></li>
-    <li><a href="turma.php">Turmas</a></li>
-    <li><a href="nota.php">Notas</a></li>
-    <li><a href="frequencia.php">Frequencia</a></li>
-</ul>
+  <main class="col-md-9">
+                <div>
+                    <p>Bem vindo ao <b>sistema de controle academico</b>.</p>
+                    <p>Aqui você poderá consultar suas <a href="notas.php" alt="notas da turma" target="_self">notas.</a></p>
+                    <p>E também sua <i><a href="frequencia.php" alt="frequencia dos alunos">frequência</a></i>.</p>
+                </div>
+            </main>
+        </div>
 
+<footer>
+  <?php include 'footer.php'?>
+</footer>
 
-<?php 
-$teste = "do aluno";
-    echo '<p>'.'Sistema acadêmico '.$teste.'</p>';
-
-$aluno = "Pablo";
-$curso = "Programador Web";
-
-echo '<p>'.'O aluno '.$aluno.' está matriculado no curso '.$curso.'</p>';
-
-$notas = array("prova1" => 8.3, "prova2" => 5.9, "prova3" => 9.2);
-
-echo '<p>'.'Média das notas do aluno '.$aluno.($notas["prova1"]+$notas["prova2"]+$notas["prova3"])/3,'</p>';
-?>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

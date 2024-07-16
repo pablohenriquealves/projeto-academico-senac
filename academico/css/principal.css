@@ -1,24 +1,26 @@
-/* comum a todas as páginas */
-
-@font-face {
-    font-family: RobotoRegular;
-    src: url(fonte/Roboto-Regular.ttf);
+/* comum a todas as páginas  */
+html, body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1;
+  }
+  footer {
+    width: 100%;
 }
 
-body {
-
-    margin: 0;
-    font-family: Roboto;
-}
-/* 
-header {
+/* header {
     text-align: center;
     width: 100%;
     display: flex;
     border: 2px solid black;
-} */
+}  */
 
-aside {
+ aside {
 
 }
 
@@ -45,10 +47,10 @@ form {
 label, input{
     margin-bottom: 5px;
     display: block;
-}
+} 
 
-/* Trabalhando a página inicial */
-
+ /* Trabalhando a página inicial  */
+ 
 #inicio h1 {
     font-size: 2.8em; 
     color: gray;
@@ -57,7 +59,7 @@ label, input{
 
 
 
-table, tr, td {
+ table, tr, td {
     border: 1px solid black;
     border-collapse: collapse;
     width: 800px;
@@ -109,4 +111,5 @@ input[type="submit"]:hover {
     color: #fff;
     border: 5px solid black;
     border-radius: 10px;
-}
+} 
+
