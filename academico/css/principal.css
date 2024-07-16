@@ -1,6 +1,7 @@
 /* comum a todas as páginas  */
 html, body {
     height: 100%;
+    margin: 0;
   }
   body {
     display: flex;
@@ -11,26 +12,30 @@ html, body {
   }
   footer {
     width: 100%;
-}
-
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar-nav {
+    margin-right: auto;
+  }
+  .navbar-collapse {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
 /* header {
     text-align: center;
     width: 100%;
     display: flex;
     border: 2px solid black;
-}  */
-
- aside {
-
-}
-
-main {
-
-}
-
-footer{
-    
-}
+} 
 
 p {
     font-size: 1.2em;
@@ -47,11 +52,11 @@ form {
 label, input{
     margin-bottom: 5px;
     display: block;
-} 
+} */
 
  /* Trabalhando a página inicial  */
  
-#inicio h1 {
+/* #inicio h1 {
     font-size: 2.8em; 
     color: gray;
     font-weight: bold;
@@ -67,11 +72,6 @@ label, input{
     line-height: 48px;
 }
 
-.logo {
-    width: 200px;
-    height: auto;
-    align-items: center;
-}
 
 .formacademico{
     width: 50%;
@@ -111,5 +111,5 @@ input[type="submit"]:hover {
     color: #fff;
     border: 5px solid black;
     border-radius: 10px;
-} 
+}  */
 

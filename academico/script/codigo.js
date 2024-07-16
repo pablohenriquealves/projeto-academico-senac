@@ -12,9 +12,9 @@ function calc_media(n1,n2) {
 function resultado(form) {
     var media = calc_media (parseFloat (form.nota1.value), parseFloat (form.nota2.value));
 
-    if (media >=7)
+    if (media >= 7)
         alert ("Aprovado com nota: "+ media);
-    if (6 < media < 5)
+    else if (6 < media < 5)
         alert ("Recuperação");
     else 
         alert ("Reprovado com nota: "+ media);
