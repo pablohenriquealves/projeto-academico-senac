@@ -1,10 +1,10 @@
 <?php
-$idmatricula = $_POST['matricula'];
+$idmatricula = $_POST['aluno'];
 $idturma = $_POST['turma'];
 
 require ('script/conexao.php');
 
-$sqlcount = "SELECT COUNT(*) AS totalalunos FROM alunoturma WHERE idturma = '$idturma'";
+$sqlcount = "SELECT COUNT(*) AS totalalunos FROM aluno_turma WHERE id_turma = '$idturma'";
 $resultadocount = mysqli_query($conexao, $sqlcount);
 $rowcount = mysqli_fetch_assoc($resultadocount);
 
@@ -18,7 +18,7 @@ if ($totalalunos >= $limitealunos){
     echo "Disponível";
 }
 
-$sql = "INSERT INTO alunoturma (idmatricula, idturma) VALUE ('$idmatricula','$idturma')";
+$sql = "INSERT INTO aluno_turma (id_matricula, id_turma) VALUE ('$idmatricula','$idturma')";
 
 if (mysqli_query($conexao, $sql)) {
     echo "Registro inserido com sucesso!";
@@ -27,6 +27,6 @@ else {
     echo "Erro ao inserir registro: ". mysqli_error($conexao);
 }
 
-header("location:cadastro_aluno_turma.php");
+header("location:cadastroalunoturma.php");
 ?>
 

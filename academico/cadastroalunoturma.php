@@ -17,27 +17,36 @@
             <?php
                 require ('script/conexao.php');
                 $sql = "SELECT aluno.cpf,aluno.nome AS anome, matricula.id AS matricula FROM aluno
-                INNER JOIN matricula ON aluno.cpf = matricula.id_aluno";
+                INNER JOIN matricula ON aluno.cpf = matricula.idaluno";
                 $resultado = mysqli_query($conexao, $sql);
+            if($resultado){
                 while ($row = mysqli_fetch_assoc($resultado)) {
-                    echo "<option value='{$row['cpf']}'>{$row['anome']}</option>";
+                    echo "<option value='{$row['matricula']}'>{$row['anome']}</option>";
                 }
+            }else{
+                echo "Erro na consulta: " . mysqli_error($conexao);
+            }
             ?>
         </select>
     </p>
     <p>
-        <label for="turma">Selecione a turma (disciplina - professor)</label>
-        <select name="turma" id="select">
-            <?php
-                require ('script/conexao.php');
-                $sql = "SELECT turma.id AS turma, turma.iddisciplina, disciplina.id, disciplina.nome AS dnome, turma.idprofessor, professor.nome AS pnome  FROM turma INNER JOIN (disciplina, professor) ON (turma.iddisciplina = disciplina.id AND turma.idprofessor = professor.cpf)";
-                $resultado = mysqli_query($conexao, $sql);
+    <label for="turma">Selecione a turma (disciplina - professor)</label>
+    <select name="turma" id="turma">
+        <?php
+            require ('script/conexao.php');
+            $sql = "SELECT turma.idturma AS turma, turma.iddisciplina, disciplina.id, disciplina.nome AS dnome, turma.idprofessor, professor.nome AS pnome FROM turma INNER JOIN disciplina ON turma.iddisciplina = disciplina.id INNER JOIN professor ON turma.idprofessor = professor.cpf";
+            $resultado = mysqli_query($conexao, $sql);
+            if ($resultado) {
                 while ($row = mysqli_fetch_assoc($resultado)) {
                     echo "<option value='{$row['turma']}'>{$row['dnome']} - Prof. {$row['pnome']} </option>";
                 }
-            ?>
-        </select>
-    </p>
+            } else {
+                echo "Erro na consulta: " . mysqli_error($conexao);
+            }
+        ?>
+    </select>
+</p>
+
     </fieldset>
    <p>   
     <input type="reset" value="Limpar">

@@ -5,5 +5,5 @@ $conexao = mysqli_connect("localhost", "root", "", "academico");
         die ('Não foi possível conectar ao banco de dados'.mysqli_connect_error());
 
     }
-echo "Conexão bem sucedida<br>";
+// echo "Conexão bem sucedida<br>";
 ?>

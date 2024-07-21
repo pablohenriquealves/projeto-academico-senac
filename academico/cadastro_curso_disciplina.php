@@ -4,7 +4,7 @@ $iddisciplina = $_POST['disciplina'];
 
 require ('script/conexao.php');
 
-$sql = "INSERT INTO curso_disciplina (iddisciplina, iddisciplina) VALUE ('$idcurso','$iddisciplina')";
+$sql = "INSERT INTO curso_disciplina (id_curso, id_disciplina) VALUE ('$idcurso','$iddisciplina')";
 
 if (mysqli_query($conexao, $sql)) {
     echo "Registro inserido com sucesso!";

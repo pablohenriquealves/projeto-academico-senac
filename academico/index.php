@@ -48,7 +48,7 @@
 
           <div class="row g-3 align-items-center my-0">
           <div class="col-auto">
-          <input type="text" id="senha" name="senha" class="form-control" aria-describedby="passwordHelpInline" placeholder="Senha">
+          <input type="password" id="senha" name="senha" class="form-control" aria-describedby="passwordHelpInline" placeholder="Senha">
           </div>
           </div>
           

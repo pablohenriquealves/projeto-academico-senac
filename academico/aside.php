@@ -15,19 +15,7 @@
       <li>
       <a href="aluno.php" class="nav-link link-dark">
       <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-         Consultar Alunos
-        </a>
-      </li>
-      <li>
-        <a href="atualizaraluno.php" class="nav-link link-dark">
-        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-        Atualizar Cadastro Aluno
-        </a>
-      </li>
-      <li>
-      <a href="editarcurso.php" class="nav-link link-dark">
-      <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-      Atualizar Curso Aluno
+         Alunos
         </a>
       </li>
       <li>
@@ -46,18 +34,6 @@
         <a href="turma.php" class="nav-link link-dark">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           Turmas
-        </a>
-      </li>
-      <li>
-        <a href="nota.php" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-          Notas
-        </a>
-      </li>
-      <li>
-        <a href="frequencia.php" class="nav-link link-dark">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-          Frequência
         </a>
       </li>
     </ul>
