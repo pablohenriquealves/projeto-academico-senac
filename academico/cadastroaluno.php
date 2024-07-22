@@ -119,7 +119,7 @@
                 </div>
                 </div>
               <div class="col-12 mt-4">
-              <button type="submit" class="btn btn-primary float-end">Enviar</button>
+              <button type="submit" class="btn btn-primary float-end me-4">Enviar</button>
               <button type= "reset" class="btn btn-danger float-end me-2">Limpar</button>
               </div>
               </form>

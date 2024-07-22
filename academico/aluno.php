@@ -16,8 +16,10 @@
             <div class="card col-md-7">
                 <div class="card-body">
                 <ul>
-            <div class="row"><a href="cadastroaluno.php">Cadastrar Aluno</a></div>
-           <div class="row"> <a href="atualizaraluno.php">Atualizar Aluno</a></div>
+          <div class="d-grid gap-2">
+                <div class="row"><button class="btn btn-outline-secondary" type="button"><a href="cadastroaluno.php">Cadastrar Aluno</a></button></div>
+                <div class="row"><button class="btn btn-outline-secondary" type="button"><a href="atualizaraluno.php">Atualizar Aluno</a></button></div>
+          </div>
         </ul>
 
                   </div>
