@@ -17,19 +17,23 @@
                 <div class="card-body">
                 <ul>
                     <div class="d-grid gap-2">
-                <div class="row">
-                    <a href="cadastroaluno.php" class="btn btn-outline-secondary btn-lg">Cadastrar Aluno</a>
+                    <div class="row">
+                    <a href="cadastrocursodisciplina.php" class="btn btn-outline-secondary btn-lg">Cadastro de disciplina</a>
+                </div>
+                    <div class="row">
+                    <a href="cadastrocursodisciplina.php" class="btn btn-outline-secondary btn-lg">Atualizar disciplina</a>
                 </div>
                 <div class="row">
-                    <a href="atualizaraluno.php" class="btn btn-outline-secondary btn-lg">Atualizar Aluno</a>
+                    <a href="consultaDisciplinaCurso.php" class="btn btn-outline-secondary btn-lg">Consulta de disciplina por curso</a>
+                </div>
+                <div class="row">
+                    <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Consulta de professor por disciplina</a>
                 </div>
                 </div>
-
-        </ul>
-
+                </ul>
                   </div>
                 </div>
-            </main>
+        </main>
         </div>
         </div>
 

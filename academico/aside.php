@@ -25,6 +25,12 @@
         </a>
       </li>
       <li>
+      <a href="curso.php" class="nav-link link-dark">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
+          Cursos
+        </a>
+      </li>
+      <li>
       <a href="disciplina.php" class="nav-link link-dark">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           Disciplinas
