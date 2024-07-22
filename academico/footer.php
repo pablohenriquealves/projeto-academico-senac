@@ -1,8 +1,7 @@
 
 
 <!-- Footer -->
-<div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary position-fixed bottom-0 start-0 w-100">
-  <!-- Copyright -->
+<div class="d-flex mt-3 flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary bottom-0 start-0 w-100">  <!-- Copyright -->
   <div class="text-white mb-3 mb-md-0">
     Copyright © 2024. Todos direitos reservados.
   </div>
