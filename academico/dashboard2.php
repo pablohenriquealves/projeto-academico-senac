@@ -10,21 +10,23 @@ if (!isset($_SESSION['usuario'])) {
 }
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<?php include 'header.php' ?>
-
+  <?php include 'header.php' ?>
 </head>
-<body>
+
+<body id="inicio">
 
 <div class="container-fluid">
 <?php include 'nav.php' ?>
 
-    <div class="row">
-        <?php include 'aside.php' ?>
-        
-        <main class="col-md-9">
+<div class="row">
+            <?php include 'aside.php' ?>
+
+  <main class="col-md-9">
     <div><h2><p>Bem-vindo ao <b>sistema de controle acadêmico</b>.</p></h2></div>
                 <div class="card col-md-7">
                 <div class="card-body">
@@ -33,12 +35,10 @@ if (!isset($_SESSION['usuario'])) {
                   </div>
                 </div>
             </main>
-        </div>
-        </div>
+</div>
 
-
-    <footer>
-        <?php include 'footer.php' ?>
-    </footer>
+<footer>
+  <?php include 'footer.php'?>
+</footer>
 </body>
 </html>

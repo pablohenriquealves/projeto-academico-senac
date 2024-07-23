@@ -9,31 +9,21 @@
 <div class="container-fluid">
 <?php include 'nav.php' ?>
 
-    <div class="row">
+        <div class="row">
         <?php include 'aside.php' ?>
         
         <main class="col-md-9">
-            <div class="card col-md-7">
+            <div class="card col-md-8">
                 <div class="card-body">
-                <ul>
                     <div class="d-grid gap-2">
-                <div class="row">
                     <a href="cadastroaluno.php" class="btn btn-outline-secondary btn-lg">Cadastrar Aluno</a>
-                </div>
-                <div class="row">
                     <a href="atualizaraluno.php" class="btn btn-outline-secondary btn-lg">Atualizar Aluno</a>
                 </div>
-                </div>
-
-        </ul>
-
                   </div>
                 </div>
             </main>
-        </div>
-        </div>
-
-    </form>
+            </div>
+            </div>
 
     <footer>
         <?php include 'footer.php' ?>

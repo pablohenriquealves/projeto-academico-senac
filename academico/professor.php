@@ -15,21 +15,11 @@
         <main class="col-md-9">
             <div class="card col-md-7">
                 <div class="card-body">
-                <ul>
                     <div class="d-grid gap-2">
-                <div class="row">
                     <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Consultar de professor por disciplina</a>
-                </div>
-                <div class="row">
                     <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Cadastro de professor</a>
-                </div>
-                <div class="row">
                     <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Atualizar professor</a>
                 </div>
-                </div>
-
-        </ul>
-
                   </div>
                 </div>
             </main>

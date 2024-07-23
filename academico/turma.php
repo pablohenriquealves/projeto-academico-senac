@@ -15,19 +15,11 @@
         <main class="col-md-9">
                 <div class="card col-md-7">
                 <div class="card-body">
-                <ul>
                     <div class="d-grid gap-2">
-                <div class="row">
                     <a href="cadastroturma.php" class="btn btn-outline-secondary btn-lg">Cadastrar turma</a>
-                </div>
-                <div class="row">
                     <a href="atualizarturma.php" class="btn btn-outline-secondary btn-lg">Atualizar turma</a>
-                </div>
-                <div class="row">
                     <a href="consultaAlunoTurma.php" class="btn btn-outline-secondary btn-lg">Consultar aluno em turma</a>
                 </div>
-                </div>
-                </ul>
                   </div>
                 </div>
             </main>
