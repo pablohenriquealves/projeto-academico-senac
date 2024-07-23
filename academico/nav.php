@@ -1,10 +1,10 @@
-<header class="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom">
+<header class="d-flex flex-wrap justify-content-between align-items-center py-3 px-2 mb-4 border-bottom">
       <!-- Logo e título -->
       <a href="dashboard.php" class="d-flex mb-3 mb-md-0 text-decoration-none link-body-emphasis">
         <img src="imagens/logosenacv2.png" alt="logo senac" class="logo">
       </a>
 
-      <div class="fs-4 ms-2 text-center"><h1>Controle Acadêmico</h1></div>
+      <div class="ms-5"><h1>Controle Acadêmico</h1></div>
 
       <!-- Navegação e formulário de pesquisa -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -26,13 +26,13 @@
                   Módulos
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="alunos.php">Alunos</a></li>
+                  <li><a class="dropdown-item" href="aluno.php">Alunos</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="professores.php">Professores</a></li>
+                  <li><a class="dropdown-item" href="professor.php">Professores</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="disciplinas.php">Disciplinas</a></li>
+                  <li><a class="dropdown-item" href="disciplina.php">Disciplinas</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="turmas.php">Turmas</a></li>
+                  <li><a class="dropdown-item" href="turma.php">Turmas</a></li>
                 </ul>
               </li>
             </ul>
