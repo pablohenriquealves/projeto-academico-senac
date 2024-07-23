@@ -7,37 +7,37 @@
     <hr>
     <ul class="nav nav-pills flex-column mb-auto">
       <li class="nav-item">
-        <a href="dashboard.php" class="nav-link active" aria-current="page">
+        <a href="dashboard.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'dashboard.php' ? 'active' : 'link-dark'; ?>" aria-current="page">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
           Início
         </a>
       </li>
       <li>
-      <a href="aluno.php" class="nav-link link-dark">
-      <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-         Alunos
+        <a href="aluno.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'aluno.php' ? 'active' : 'link-dark'; ?>">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
+          Alunos
         </a>
       </li>
       <li>
-        <a href="professor.php" class="nav-link link-dark">
+        <a href="professor.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'professor.php' ? 'active' : 'link-dark'; ?>">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           Professores
         </a>
       </li>
       <li>
-      <a href="curso.php" class="nav-link link-dark">
+        <a href="curso.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'curso.php' ? 'active' : 'link-dark'; ?>">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           Cursos
         </a>
       </li>
       <li>
-      <a href="disciplina.php" class="nav-link link-dark">
+        <a href="disciplina.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'disciplina.php' ? 'active' : 'link-dark'; ?>">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           Disciplinas
         </a>
       </li>
       <li>
-        <a href="turma.php" class="nav-link link-dark">
+        <a href="turma.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'turma.php' ? 'active' : 'link-dark'; ?>">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
           Turmas
         </a>
@@ -57,4 +57,4 @@
       </ul>
     </div>
   </div>
-  </aside>
+</aside>

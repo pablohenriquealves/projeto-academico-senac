@@ -12,7 +12,7 @@
     <div class="row">
         <?php include 'aside.php' ?>
         
-        <main class="col-md-9">
+        <main class="col-md-9 d-flex justify-content-center align-items-center">
             <div class="card col-md-8">
                 <div class="card-body">
                     <div class="d-grid gap-2">

@@ -12,8 +12,8 @@
     <div class="row">
         <?php include 'aside.php' ?>
         
-        <main class="col-md-9">
-            <div class="card col-md-7">
+        <main class="col-md-9 d-flex justify-content-center align-items-center">
+            <div class="card col-md-8">
                 <div class="card-body">
                     <div class="d-grid gap-2">
                     <a href="cadastrocursodisciplina.php" class="btn btn-outline-secondary btn-lg">Cadastro de disciplina</a>
