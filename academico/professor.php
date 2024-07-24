@@ -16,8 +16,8 @@
             <div class="card col-md-8">
                 <div class="card-body">
                     <div class="d-grid gap-2">
-                    <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Consultar de professor por disciplina</a>
-                    <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Cadastro de professor</a>
+                    <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Consultar professor por disciplina</a>
+                    <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Cadastrar professor</a>
                     <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Atualizar professor</a>
                 </div>
                   </div>

@@ -16,9 +16,9 @@
                 <div class="card col-md-8">
                 <div class="card-body">
                     <div class="d-grid gap-2">
+                        <a href="consultaAlunoTurma.php" class="btn btn-outline-secondary btn-lg">Consultar aluno em turma</a>
                     <a href="cadastroturma.php" class="btn btn-outline-secondary btn-lg">Cadastrar turma</a>
                     <a href="atualizarturma.php" class="btn btn-outline-secondary btn-lg">Atualizar turma</a>
-                    <a href="consultaAlunoTurma.php" class="btn btn-outline-secondary btn-lg">Consultar aluno em turma</a>
                 </div>
                   </div>
                 </div>

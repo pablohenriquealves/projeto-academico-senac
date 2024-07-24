@@ -16,10 +16,10 @@
             <div class="card col-md-8">
                 <div class="card-body">
                     <div class="d-grid gap-2">
-                    <a href="cadastrocursodisciplina.php" class="btn btn-outline-secondary btn-lg">Cadastro de disciplina</a>
+                        <a href="consultaDisciplinaCurso.php" class="btn btn-outline-secondary btn-lg">Consulta de disciplina por curso</a>
+                        <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Consulta de professor por disciplina</a>
+                    <a href="cadastrocursodisciplina.php" class="btn btn-outline-secondary btn-lg">Cadastrar disciplina</a>
                     <a href="cadastrocursodisciplina.php" class="btn btn-outline-secondary btn-lg">Atualizar disciplina</a>
-                    <a href="consultaDisciplinaCurso.php" class="btn btn-outline-secondary btn-lg">Consulta de disciplina por curso</a>
-                    <a href="consultaProfessorDisciplina.php" class="btn btn-outline-secondary btn-lg">Consulta de professor por disciplina</a>
                 </div>
                   </div>
                 </div>

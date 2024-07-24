@@ -16,10 +16,11 @@
             <div class="card col-md-8">
                 <div class="card-body">
                     <div class="d-grid gap-2">
-                    <a href="consultaProfessorCurso.php" class="btn btn-outline-secondary btn-lg">Consultar de curso</a>
-                    <a href="cadastrocurso.php" class="btn btn-outline-secondary btn-lg">Cadastro de curso</a>
-                    <a href="consultaalunocurso.php" class="btn btn-outline-secondary btn-lg">Consulta aluno em um curso</a>
-                    <a href="consultaCoordenadorCurso.php" class="btn btn-outline-secondary btn-lg">Consulta de coordenador de curso</a>
+                    <a href="consultaProfessorCurso.php" class="btn btn-outline-secondary btn-lg">Consultar cursos</a>
+                    <a href="cadastrocurso.php" class="btn btn-outline-secondary btn-lg">Cadastrar curso</a>
+                    <a href="cadastrocurso.php" class="btn btn-outline-secondary btn-lg">Atualizar curso</a>
+                    <a href="consultaCoordenadorCurso.php" class="btn btn-outline-secondary btn-lg">Consultar coordenador de um curso</a>
+                    <a href="consultaalunocurso.php" class="btn btn-outline-secondary btn-lg">Consultar aluno em um curso</a>
                     <a href="cadastroMatricula.php" class="btn btn-outline-secondary btn-lg">Matricular aluno em um curso</a>
                 </div>
                   </div>
